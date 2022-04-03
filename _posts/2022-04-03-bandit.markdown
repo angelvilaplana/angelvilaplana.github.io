@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Bandit"
+title:  "Bandit Solution"
+subtitle : "Solutions at all levels of Bandit CTF"
 categories: linux ctf
 ---
 

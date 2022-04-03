@@ -20,9 +20,13 @@ layout: default
             {{ post.title | escape }}
           </a>
         </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
+        <a class="subtitle-link" href="{{ post.url | absolute_url }}">
+          {% if post.subtitle %}
+            <p class="post-subtitle">
+              {{ post.subtitle | strip_html }}
+            </p>
+          {% endif %}
+        </a>
       </li>
       {%- endfor -%}
     </ul>
